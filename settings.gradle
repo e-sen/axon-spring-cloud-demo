@@ -1,0 +1,11 @@
+rootProject.name = 'axon-spring-cloud-demo'
+
+include 'common'
+include 'eureka-server'
+include 'rest-command-server'
+include 'user-server'
+
+project(':common').projectDir = new File(settingsDir,'./common')
+project(':eureka-server').projectDir = new File(settingsDir,'./eureka-server')
+project(':rest-command-server').projectDir = new File(settingsDir,'./rest-command-server')
+project(':user-server').projectDir = new File(settingsDir,'./user-server')

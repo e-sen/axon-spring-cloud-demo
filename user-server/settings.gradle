@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'user-server'
+
+include 'common'
+
+project(':common').projectDir = new File(settingsDir, '../common')

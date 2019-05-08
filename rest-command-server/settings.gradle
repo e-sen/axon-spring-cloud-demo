@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'rest-command-server'
+
+include 'common'
+
+project(':common').projectDir = new File(settingsDir, '../common')
